@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <style>
+        body{
+          background-color:  white;
+          text-align: center;
+        }
+
+        img {
+          display: block;          
+          margin: auto;
+        }
+        button{
+          outline: none;
+          background-color: tomato;
+          color: white;
+          font-size: 32px;
+          margin: 16px 0;
+          cursor: pointer;
+        }
+
+    </style>
+  </head>
+  <body>
+    <script></script>
+    <button id="btnjiyoun"> 지연이 나와랐!! ~</button>
+    <button id="btnrabbit">토끼 나와랐!!~ </button>
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">    
+    <img id="jiyoun" src="img/jiyoun.jpg" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img id="rabbit" src="img/rabbit.png" alt="rabbit">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+
+    <script>
+        const btnjiyoun = document.querySelector('#btnjiyoun');
+        const btnrabbit = document.querySelector('#btnrabbit');
+        const jiyoun = document.querySelector('#jiyoun');
+        const rabbit = document.querySelector('#rabbit');
+
+        btnjiyoun.addEventListener('click',()=> {
+          jiyoun.scrollIntoView({behavior:'smooth'});
+        })
+
+        btnrabbit.addEventListener('click',()=> {
+            rabbit.scrollIntoView({behavior:'smooth'});
+        })
+    </script>
+
+  </body>
+</html>
