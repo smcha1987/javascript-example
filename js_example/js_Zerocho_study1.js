@@ -1,5 +1,5 @@
 
-const header = document.querySelector('MainPage__SectionTitle-sc-fp90zm-13');
+const header = document.querySelector('.MainPage__SectionTitle-sc-fp90zm-13');
 
 
 header.addEventListener('click',function (){
